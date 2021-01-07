@@ -17,17 +17,10 @@
             background-image: url('./SRC/PAGE1/9606a9c9-202e-47ac-a6cf-bbefacdb5e6f1.png');
             position:fixed;
 
-            z-index:-1;
+            z-index: -1;
             height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-        }
-        .fav {
-            background-image: url("./SRC/PAGE1/logo_brontotur2.png");
-            width: 60px;
-            height: 72px;
-            background-repeat: no-repeat;
-            padding-top: 100px ;
         }
         .menu {
             padding: 15px 20px;
@@ -45,17 +38,48 @@
             font-style: unset;
         }
         .text {
-            margin: 60px 60px ;
+            margin-top: 255px;
+            margin-left: 55px;
             padding: 15px 10px;
             background-color: rgba(0,0,0,0.5);
+            width: 575px ;
             z-index: -1;
             display: inline-block;
         }
         .element {
             color:white;
         }
-        .element > a {
-            font-style: unset;
+        .fav {
+            margin-top: 57px;
+            margin-left: 57px;
+            width: 60px;
+            height: 72px;
+            z-index: -1;
+        }
+        .bronn {
+            margin-top: 75px;
+            margin-left: 42px;
+            width: 155px;
+            height: 35px;
+            z-index: -1;
+        }
+        .element > p {
+            color:white;
+            font-style: normal;
+        }
+        #touragency {
+            font-family: Open Sans,sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 48px
+        }
+        #247 {
+            font-family: Open Sans , sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
         }
     </style>
     <title>Bron Tour</title>
@@ -69,13 +93,14 @@
         <div class="p-2 menu-element"><a href="#">О нас</a></div>
         <div class="p-2 menu-element"><a href="#">Нашы преимущества</a></div>
         <div class="p-2 menu-element"><a href="#">Отзывы</a></div>
-        <div class="p-2 menu-element"><a href="tel:+380(066)115-94-36">+380(066)115-94-36</a></div>
+        <div class="p-2 menu-element"><a href="tel:+38(066)115-94-36">+38(066)115-94-36</a></div>
     </div>
-        <div class="bg-image fav"></div>
-        <div class="bg-image bronn"></div>
+        <img class="fav" src="./SRC/PAGE1/logo_brontotur2.png" alt="ico">
+        <img class="bronn" src="./SRC/PAGE1/logo_brontotur_текст_21.png" alt="ico2">
     <div class="d-grid d-inline-grid row justify-content-center text">
-        <div class="element"><p>ТУРИСТИЧЕСКОЕ АГЕНСТВО</p></div>
-        <div class="element"><p>Поддержка менеджера 24/7 от покупки до приезда домой и самые улетные цены</p></div>
+        <div class="element p-1" ><p id="touragency">ТУРИСТИЧЕСКОЕ АГЕНСТВО</p></div>
+        <div class="element p-1"><p id="247">Поддержка менеджера 24/7 от покупки до<br>приезда домой и самые улетные цены</p></div>
+        <button class="btn btn" type="button"></button>
     </div>
 </body>
 </html>
