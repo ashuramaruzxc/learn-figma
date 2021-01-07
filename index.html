@@ -24,21 +24,52 @@
             padding: 10px;
             padding-top: 15px;
             padding-bottom: 15px;
-            background-color: rgba(0,0,0,0.4);
             float:right;
         }
         
-        .menu-element {
+        .c-bg {
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        .c-txt {
             color: rgb(255,255,255);
+        }
+        
+        .c-btn {
+            background-color: rgb(255, 255, 255);
+            border-radius: 0px;
+            color: #410E54;
+            font-weight: bold;
+            font-size: 17px;
+            margin-top: 30px;
+            height: 56px;
+            width: 200px;
+        }
+        
+        .menu-element {
             text-align:center;
+            margin-left: 15px;
         }
         .menu-element > a {
-            color: rgb(255,255,255);
             font-style: none;
         }
         .menu-element > a::hover {
-            font-style: none;
+            color: rgb(255,255,255);
         }
+        
+        .logo {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        
+        #main-window {
+            padding: 30px;
+            margin-top: 15%;
+            margin-left: 50px;
+            width: 550px;
+        }
+        
+        
         
     </style>
 
@@ -46,22 +77,33 @@
   </head>
   <body>
   
+  
+    <!-- Шапка -->
     <div class="container-fluid">
     
         <div class="w-100 bg-image" id="background-image"></div>
         
-        <div class="d-flex d-inline-flex row justify-content-end " id="menu">
+        <div class="d-flex d-inline-flex row justify-content-end c-bg " id="menu">
         
-<!--             <img class=""> -->
         
-            <div class="p-2 menu-element"><a href="#">Горящие туры</a></div>
-            <div class="p-2 menu-element"><a href="#">О нас</a></div>
-            <div class="p-2 menu-element"><a href="#">Нашы преимущества</a></div>
-            <div class="p-2 menu-element"><a href="#">Отзывы</a></div>
-            <div class="p-2 menu-element"><a href="#">+380(095)000-00-00</a></div>
+            <div class="p-2 menu-element"><a href="#" class="c-txt">Горящие туры</a></div>
+            <div class="p-2 menu-element"><a href="#" class="c-txt">О нас</a></div>
+            <div class="p-2 menu-element"><a href="#" class="c-txt">Нашы преимущества</a></div>
+            <div class="p-2 menu-element"><a href="#" class="c-txt">Отзывы</a></div>
+            <div class="p-2 menu-element"><a href="tell:+380(095)000-00-00" class="c-txt">+380(095)000-00-00</a></div>
             
         </div>
         
+            <img class="logo" src="./SRC/PAGE 1/logo_brontotur2.png">
+            <img class="logo" src="./SRC/PAGE 1/logo_brontotur_текст_21.png">
+        
+    </div>
+    
+    <!-- Основное окошко -->
+    <div class="c-bg" id="main-window"> 
+        <h1 class="c-txt" style="font-size:32px;">ТУРИСТИЧЕСКОЕ АГЕНСТВО</h1>
+        <p class="c-txt" style="font-size:18px;margin-top:40px;width:80%;">Поддержка менеджера 24/7 от покупки до приезда домой и самые улетные цены</p>
+        <button class="btn btn-lg c-btn"  >Подобрать тур</button>
     </div>
     
     <!-- Optional JavaScript -->
