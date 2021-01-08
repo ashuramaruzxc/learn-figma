@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="heigth: 100%">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,13 +10,18 @@
     
     <style>
     
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+    
         #background-image {
             background-repeat: no-repeat;
             background-size: cover;
             background-image: url('./SRC/PAGE 1/9606a9c9-202e-47ac-a6cf-bbefacdb5e6f1.png');
             height: 100%;
-            position:fixed;
-            transform: scale(1.1);
+            top: 0;
+/*             transform: scale(1.1); */
             z-index:-1;
         }
         
@@ -51,9 +56,9 @@
             margin-left: 15px;
         }
         .menu-element > a {
-            font-style: none;
+            font-style: unset;
         }
-        .menu-element > a::hover {
+        .menu-element > a:hover {
             color: rgb(255,255,255);
         }
         
@@ -64,9 +69,79 @@
         
         #main-window {
             padding: 30px;
-            margin-top: 15%;
+            margin-top: 20%;
             margin-left: 50px;
             width: 550px;
+        }
+        
+        #main-window > h1 {
+            font-size:32px;
+        }
+        
+        #main-window > p {
+            font-size:18px;
+            margin-top:40px;
+            width:80%;
+        }
+        
+        #slider {
+            background-color: rgb(255,255,255);
+/*             top: 100%; */
+/*             position:absolute; */
+        }
+        
+        #slider img {
+            width: 100%;
+        }
+        
+        #slider p {
+            float: left;
+            margin-top: 60px;
+            font-size: 17px;
+            color: #410E54;
+            font-weight: bold;
+        }
+        
+        #slider .row {
+            transform: scale(0.925);
+        }
+        
+        #slider .row > p {
+            text-align: center;
+            float: none;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        
+        #slider .row > .col {
+            transform: scale(0.9);
+        }
+        
+        #slider button {
+            float: right;
+            background-color: #592C6A;
+            color: white;
+            margin-right: 15px;
+        }
+        
+        #slider > .c-bg {
+            width: 2%;
+            height: 60px;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: 100;
+            position: absolute;
+        }
+        
+        #arrow-left {
+            left: 0;
+            top: 130%;
+        }
+        
+        #arrow-right {
+            left: 98%;
+            top: 130%;
         }
         
         
@@ -75,36 +150,63 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body style="heigth: 100%;">
   
-  
-    <!-- Шапка -->
-    <div class="container-fluid">
+    <!-- Page 1 -->
     
-        <div class="w-100 bg-image" id="background-image"></div>
+        <div class="container-fluid bg-image" id="background-image">
         
-        <div class="d-flex d-inline-flex row justify-content-end c-bg " id="menu">
-        
-        
-            <div class="p-2 menu-element"><a href="#" class="c-txt">Горящие туры</a></div>
-            <div class="p-2 menu-element"><a href="#" class="c-txt">О нас</a></div>
-            <div class="p-2 menu-element"><a href="#" class="c-txt">Нашы преимущества</a></div>
-            <div class="p-2 menu-element"><a href="#" class="c-txt">Отзывы</a></div>
-            <div class="p-2 menu-element"><a href="tell:+380(095)000-00-00" class="c-txt">+380(095)000-00-00</a></div>
+            <!-- Шапка -->      
+            <div class="d-flex d-inline-flex row justify-content-end c-bg " id="menu">
             
+            
+                <div class="p-2 menu-element"><a href="#" class="c-txt">Горящие туры</a></div>
+                <div class="p-2 menu-element"><a href="#" class="c-txt">О нас</a></div>
+                <div class="p-2 menu-element"><a href="#" class="c-txt">Нашы преимущества</a></div>
+                <div class="p-2 menu-element"><a href="#" class="c-txt">Отзывы</a></div>
+                <div class="p-2 menu-element"><a href="tell:+380(095)000-00-00" class="c-txt">+380(095)000-00-00</a></div>
+                
+            </div>
+            
+                <img class="logo" src="./SRC/PAGE 1/logo_brontotur2.png">
+                <img class="logo" src="./SRC/PAGE 1/logo_brontotur_текст_21.png">
+                
+                <!-- Основное окошко -->
+                <div class="c-bg" id="main-window"> 
+                    <h1 class="c-txt" >ТУРИСТИЧЕСКОЕ АГЕНСТВО</h1>
+                    <p class="c-txt" >Поддержка менеджера 24/7 от покупки до приезда домой и самые улетные цены</p>
+                    <button class="btn btn-lg c-btn"  >Подобрать тур</button>
+                </div>
         </div>
-        
-            <img class="logo" src="./SRC/PAGE 1/logo_brontotur2.png">
-            <img class="logo" src="./SRC/PAGE 1/logo_brontotur_текст_21.png">
-        
+
+    
+    <!-- Page 2 -->
+    
+    <!-- Слайдер туров -->
+    <div class="container-fluid" id="slider" >
+        <div class="c-bg c-txt" id="arrow-left">&#10094;</div>
+        <div class="c-bg c-txt" id="arrow-right">&#10095;</div>
+        <div class="row">
+            <p>Горящие туры</p>
+            <div class="col">
+                <img src="./SRC/PAGE 2/sea-2150245_960_7201.png">
+                <p>Египет</p>
+                <button class="btn c-btn">Забронировать</button>
+            </div>
+            <div class="col">
+                <img src="./SRC/PAGE 2/istanbul-1139844_960_721.png">
+                <p>Стамбул</p>
+                <button class="btn c-btn">Забронировать</button>
+            </div>
+            <div class="col">
+                <img src="./SRC/PAGE 2/photo-1549035092-33b2937b075a1.png">
+                <p>Занзибар</p>
+                <button class="btn c-btn">Забронировать</button>
+            </div>
+            <p>О нас</p>
+        </div>
     </div>
     
-    <!-- Основное окошко -->
-    <div class="c-bg" id="main-window"> 
-        <h1 class="c-txt" style="font-size:32px;">ТУРИСТИЧЕСКОЕ АГЕНСТВО</h1>
-        <p class="c-txt" style="font-size:18px;margin-top:40px;width:80%;">Поддержка менеджера 24/7 от покупки до приезда домой и самые улетные цены</p>
-        <button class="btn btn-lg c-btn"  >Подобрать тур</button>
-    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
