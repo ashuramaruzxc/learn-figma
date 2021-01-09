@@ -10,19 +10,29 @@
     
     <style>
     
+        * {font-family: Open Sans}
+    
         html, body {
             height: 100%;
             width: 100%;
         }
     
-        #background-image {
+        .background-image {
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url('./SRC/PAGE 1/9606a9c9-202e-47ac-a6cf-bbefacdb5e6f1.png');
             height: 100%;
             top: 0;
 /*             transform: scale(1.1); */
             z-index:-1;
+        }
+        
+        #page-1bg {
+            background-image: url('./SRC/PAGE 1/9606a9c9-202e-47ac-a6cf-bbefacdb5e6f1.png');
+        }
+        
+        #page-2bg {
+            background-image: url('./SRC/PAGE 2/photo-1534008897995-27a23e8590481.png');
+            height: 80%;
         }
         
         #menu {
@@ -144,6 +154,32 @@
             top: 130%;
         }
         
+        #page-2bg .col > div {
+            background-color: rgba(30, 6, 33, 0.3);
+            font-size: 40px;
+            padding: 60px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-right: 80px;
+            margin-top: 30px;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #page-2bg .col > div > h1 {
+            font-weight: bold;
+        }
+        
+        #page-2bg .col > div:last-child {
+            font-size: 20px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 30px;
+            width: 100%;
+            font-weight: normal;
+        }
+        
         
         
     </style>
@@ -154,7 +190,7 @@
   
     <!-- Page 1 -->
     
-        <div class="container-fluid bg-image" id="background-image">
+        <div class="container-fluid bg-image background-image" id="page-1bg">
         
             <!-- Шапка -->      
             <div class="d-flex d-inline-flex row justify-content-end c-bg " id="menu">
@@ -204,6 +240,28 @@
                 <button class="btn c-btn">Забронировать</button>
             </div>
             <p>О нас</p>
+        </div>
+    </div>
+    
+    <!-- О нас -->
+    
+    <div class="container-fluid bg-image background-image" id="page-2bg" >
+        <div class="row">
+            <div class="col">
+                <div class="c-txt"><h1>5</h1></div>
+                <br>
+                <div class="c-txt bd-highlight" >Туристическое агенство существует уже более 5 лет. Для того чтоб чтобы Ваш отпуск принес Вам удовольствие у вас есть мы </div>
+            </div>
+            <div class="col">
+                <div class="c-txt"><h1 style="transform: translateX(-20px)">200</h1></div>
+                <br>
+                <div class="c-txt bd-highlight" >Более 200 довольных туристов . У нас огромная база лучших отелей, подборка прекрасного соотношения цены-качества. Нам доверяют свой отдых</div>
+            </div>
+            <div class="col">
+                <div class="c-txt"><h1 style="transform: translateX(-25px)">24/7</h1></div>
+                <br>
+                <div class="c-txt bd-highlight" >Мы на связи с вами 24 /7. Мы готовы решать ваши проблемы, помогать в любых вопросах. Для нас прежде всего важно чтоб вы получили удовольствие</div>
+            </div>
         </div>
     </div>
     
