@@ -200,6 +200,56 @@
             margin-left:40%;
         }
         
+        #page-3bg {
+            background-image: url("./SRC/PAGE 3/76de148b-3c42-4f26-98eb-3b027f5a8d801.png");
+            height: 140%;
+        }
+        
+        #page-3bg > .row > .col-8 {
+            transform: scale(0.8);
+            color: white;
+            padding: 60px;
+            background-color: rgba(30, 6, 33, 0.3);
+            margin-top: 100px;
+            font-size: 26px;
+            width: 90%;
+        }
+        
+        #page-3bg .col-8 {
+            height: 80%;
+        }
+        
+        #page-3bg img {
+            margin-top: 10px;
+            transform: translateX(-50px);
+        }
+        
+        form {
+            margin: auto;
+            width: 400px;
+        }
+        
+        form > * {
+            float:none;
+            margin:auto;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 60px;
+            border: none;
+            text-align: center;
+        }
+        
+        form > *::placeholder {
+            opacity: 1;
+            font-weight: 600;
+        }
+        
+        .form-btn {
+            width: 100%;
+            margin-top: 40px;
+            font-size: 15px;
+        }
+        
         
         
     </style>
@@ -290,6 +340,7 @@
     <!-- Нашы приемущества -->
     <div class="container-fluid bg-white">
         <p class="c-ph">Наши преимущества</p>
+        
         <div class="row">
         
             <div class="col">
@@ -313,7 +364,37 @@
                 <p class="c-p">У вас есть круглосуточная поддержка с момента покупки тура до прибытия домой</p>
             </div>
             
+            
         </div>
+        
+        <p class="c-ph">Отзывы</p>
+    </div>
+    
+    <div class="container-fluid bg-image background-image" id="page-3bg">
+    
+        <!-- Отзывы -->
+        <div class="row">
+        
+            <div class="col-8 c-bg">
+                Отель находился через дорогу от моря, море чистое, теплое не хотелось с моря выодить . На теретории отеля есть басейн но мы в нем купались один раз. Большая красивая набережная много кафе и дискотек, хорошая куня. Мы с мужем хотим сказать огромное спасибо нашему тураператору Дарье, она много времени провела с нами по выбору страны, отеля, еды и расположения. Мы будем советовать тебя всем нашим знакомым, теперь все перелеты и страны только с тобой
+            </div>
+            
+            <div class="col-4">
+                <img src="./SRC/PAGE 3/6af82338-3c22-4d94-99c2-e0bf3882fccc1.png">
+            </div>
+        
+        </div>
+        
+        
+        <!-- Заявка -->
+        <p class="c-ph">Оставь заявку и мы подберем для тебя тур</p>
+        <form>
+            <input class="c-bg c-txt" placeholder="Имя"><br>
+            <input class="c-bg c-txt" placeholder="Телефон"><br>
+            <input type="submit" value="Отправить" class="btn btn-lg c-btn form-btn">
+        </form>
+        
+        
     </div>
     
     
